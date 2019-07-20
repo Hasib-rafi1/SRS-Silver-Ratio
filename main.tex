@@ -2,8 +2,10 @@
 \usepackage{import}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
+\usepackage[section]{placeins}
 \usepackage[english]{babel}
 \usepackage{amsmath}
+\usepackage{csquotes}
 \usepackage{biblatex}
 \bibliography{ref.bib}
 
@@ -38,8 +40,7 @@ For silver ratio, the smaller and twice of the larger number are added to get th
 Then the latest number is divided  by the previous larger number. 
 
 \section{Interview}
-
-I interviewed a undergraduate student from Dhaka University - Bangladesh with math background.Her name is Esrat Jahan Tonni. As she is currently studying, she might need to use irrational numbers in her undergraduate career. The interview questions and the answers are given below:-\newline
+I interviewed a undergraduate student from Dhaka University - Bangladesh with math background. Her name is Esrat Jahan Tonni. As she is currently studying, she might need to use irrational numbers in her undergraduate career. The interview questions and the answers are given below:-\newline
 
 \subsection{Question and Answer}
 Q1: How long you are in math domain? \newline
@@ -76,7 +77,7 @@ Though the interviewee is not expert in the area of the irrational numbers, She 
 
 \section{Persona}
 The persona is given below: 
-\begin{figure}[ht!]
+\begin{figure}[htb!]
   
   \includegraphics[width=1\textwidth]{persona}
   \centering
@@ -84,12 +85,40 @@ The persona is given below:
 \end{figure}
 
 \section{Problem Domain Model}
-\begin{figure}[ht!]
+\begin{figure}[htb!]
   
   \includegraphics[width=1\textwidth]{uml}
   \centering
   \caption{Class diagram for calculator with special number and operator}
 \end{figure}
-\printbibliography
 
+\section{Use case Model}
+
+\subsection{Use Case Diagram}
+Actor of this system will be an user. The user will give inputs of operator and operands. User can sometimes use special operator. but it is optional to use. Same for the operand input field can have any number. but if the user wants can have special number like Silver Ratio. With the Operator and operand it makes an mathematical expression. Calculate the expression and display the result. 
+\begin{figure}[ht!]
+  
+  \includegraphics[width=1\textwidth]{usecase}
+  \centering
+  \caption{Use case diagram for calculator with special number and operator}
+\end{figure}
+\subsection{Activity Diagram}
+Here it will work like a regular calculator with an extra feature of an operand silver ratio number and operator for getting a value from a number using the silver ratio content.
+If silver ratio is used as a operand it will work like a double number.
+An example is given below :- 
+$$2+\delta_s = 4.4142$$
+\begin{figure}[!htb]
+ \centering
+  \includegraphics[width=.50\textwidth]{activity}
+  \caption{Activity diagram for calculator with special number and operator}
+\end{figure}
+
+if it uses like an operator than it will give the value of the another number which ratio is $\delta_s$. If one value is 2 than the silver ratio operand will give the another value (0.82842712474619 )based on the silver ratio equation.
+the equation is give below: - \newline
+
+\[ \dfrac{2a + b}{a}  = \delta_s \]
+\[ => {2a + b}  = {a *\delta_s} \]
+\[ => {b}  = {(a *\delta_s) - 2a} \]
+
+\printbibliography
 \end{document}                 % The input file ends with this command.
