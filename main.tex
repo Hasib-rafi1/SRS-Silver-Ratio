@@ -18,7 +18,7 @@
 
 \section{Introduction}          % This command makes a section title.
 
-This document provides an understanding of only an irrational  number called Silver Ratio $(\delta_s)$. An irrational  number is  not  a rational  number, it is not possible to express an irrational number as a quotient of two integers.
+This document provides an understanding of only an irrational  number called Silver Ratio $(\delta_s)$. An irrational  number is  not  a rational  number, it is not possible to express an irrational number as a quotient of two integers \cite{project_des}.
 \subsection{History}
 Silver Ratio is studied from the time of Greek knowledge, which discusses the fundamental characteristics of the number system. Though it is not used by normal people intentionally. Silver ratio is the limiting of consecutive  of infinite sequence of integers, The silver ratio is presented in a Greek symbol ($\delta_s$).
 
@@ -96,7 +96,7 @@ The persona is given below:
 
 \subsection{Use Case Diagram}
 Actor of this system will be an user. The user will give inputs of operator and operands. User can sometimes use special operator. but it is optional to use. Same for the operand input field can have any number. but if the user wants can have special number like Silver Ratio. With the Operator and operand it makes an mathematical expression. Calculate the expression and display the result. 
-\begin{figure}[ht!]
+\begin{figure}[htb!]
   
   \includegraphics[width=1\textwidth]{usecase}
   \centering
@@ -120,5 +120,228 @@ the equation is give below: - \newline
 \[ => {2a + b}  = {a *\delta_s} \]
 \[ => {b}  = {(a *\delta_s) - 2a} \]
 
+\section{User Stories}
+\subsection{Global Constraints}
+\begin{itemize}
+  \item The information about silver ratio is available in the internet. But the application of this ratio is not clear. This irrational number is used in many geometrical calculation but the use of that is not available in internet. 
+  \item Geometric interpretation of the silver ratio is not clearly mentioned \cite{jdc_silver}.
+\end{itemize}
+
+\subsection{Local Constraints}
+Interviewee doesn't apply silver ratio in his career. So he exactly doesn't know how it helps. But he has a conceptual idea about the ratio. 
+
+\subsection{User Stories (US)}
+The concept of the type of user stories are taken from online search\cite{js_story,cal_story}. And the user story presented here are based on interview and use case model from this document. \newline
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 1 - Input the digital numbers} \\
+ \hline
+ \textbf {Story ID}& US1 &  \textbf{Priority} & HIGH \\
+ \hline
+  \textbf{Description}   & As an user, I want click able 0 to 9 numbers in calculator &    \textbf{Acceptance}& 
+\begin{itemize}
+\item When i click them they will store it in a variable until i click any operator or a equal sign.
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.5 d &  \textbf{Constrains}& Number has to be in this range $9999999999>x>-9999999999$  \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 2 - Addition of two numbers} \\
+ \hline
+ \textbf {Story ID}& US2 &  \textbf{Priority} & HIGH \\
+ \hline
+  \textbf{Description}   & As an user, I want add two numbers so that I can see what is the total number &    \textbf{Acceptance}& 
+\begin{itemize}
+\item Given two numbers need to be added and have to return the total result. Example: 2 add 3 will produce the result 5. 6 add 4 will produce the result 10. 
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.2 d &  \textbf{Constrains}&   \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 3 - Subtraction of two numbers} \\
+ \hline
+ \textbf {Story ID}& US3 &  \textbf{Priority} & HIGH \\
+ \hline
+  \textbf{Description}   & As an user, I want subtract two numbers so that I can see what is the result &    \textbf{Acceptance}& 
+\begin{itemize}
+\item Given two numbers need to be subtracted and have to return the rest. Example: 2 subtracted from 3 will produce the result 1. 6 subtracted from 10 will produce the result 4. 
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&  If the number which will be subtracted is bigger than actual number it will produce minus result  \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 4 - Multiplication of two numbers} \\
+ \hline
+ \textbf {Story ID}& US4 &  \textbf{Priority} & HIGH \\
+ \hline
+  \textbf{Description}   & As an user, I want multiply two numbers so that I can see what is the result &    \textbf{Acceptance}& 
+\begin{itemize}
+\item Given two numbers need to be multiplied and have to return the result. Example: 2 multiplied with 3 will produce the result 6. 6 multiplied with 10 will produce the result 60. 
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&  If the number which will be multiplied is less than zero it will produce a minus number and  less than 1 but greater than zero will reduce the number. \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 5 - Division of two numbers} \\
+ \hline
+ \textbf {Story ID}& US5 &  \textbf{Priority} & HIGH \\
+ \hline
+  \textbf{Description}   & As an user, I want divide two numbers so that I can see what is the division result &    \textbf{Acceptance}& 
+\begin{itemize}
+\item Given two numbers need to be divided and have to return the result. Example: 4 divided by 2 will produce the result 2. 16 divided by 2 will produce the result 8. 
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&  No number can be divided by zero. \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 6 - Division of two numbers} \\
+ \hline
+ \textbf {Story ID}& US6 &  \textbf{Priority} & Low \\
+ \hline
+  \textbf{Description}   & As an user, I want toggle the sign of the number so that i can get opposite value &    \textbf{Acceptance}& 
+\begin{itemize}
+\item Given number need to be opposite sign number. Example: 4 will be -4.   -6 will be 6. 
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&   \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 7 - Equal operation} \\
+ \hline
+ \textbf {Story ID}& US7 &  \textbf{Priority} & High \\
+ \hline
+  \textbf{Description}   & As an user, I want every calculation result after clicking in the equal button &    \textbf{Acceptance}& 
+\begin{itemize}
+\item For US2 to US5 all the use case result will be displayed if the user press equal button. 
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}& If there is no operation occurred it will show the current value in display   \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 8 - Silver ratio as a operand} \\
+ \hline
+ \textbf {Story ID}& US8 &  \textbf{Priority} & High \\
+ \hline
+  \textbf{Description}   & As an user, I want the button of silver ratio as number. So that i can use it as a number for arithmetic operation. &    \textbf{Acceptance}& 
+\begin{itemize}
+\item  If you click the button it will be equivalent to 2.4142135623. So all the arithmetic operation will occur with this operand. Example : 5 + $(\delta_s)$ = 7.4142135623, $(\delta_s)$ - 1.4142135623 = 1
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&  can not be divided by zero.  \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 9 - Silver ratio as a operand} \\
+ \hline
+ \textbf {Story ID}& US9 &  \textbf{Priority} & High \\
+ \hline
+  \textbf{Description}   & As an user, I want to know the number for which silver ratio will be a given number. &    \textbf{Acceptance}& 
+\begin{itemize}
+\item  The silver ratio of 2 will be 0.82842712474619.
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&  The ratio of zero is not possible.  \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 10 -  Decimal separator} \\
+ \hline
+ \textbf {Story ID}& US10 &  \textbf{Priority} & High \\
+ \hline
+  \textbf{Description}   & As an user, I want to use decimal number so I want a decimal separator for decimal number input.. &    \textbf{Acceptance}& 
+\begin{itemize}
+\item  Need to take decimal input.
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&  Decimal separator can be used once in a number.  \\
+ \hline
+\end{tabular}
+\section{Traceability Matrix}
+
+The traceability matrix is realized to ensure that all the requirements defined for the system are tested and passed \cite{prev_project}.\newline
+
+\begin{tabular}{ |p{1cm}|p{1cm}|p{1cm}|p{3cm}|p{3cm}|p{2cm}| }
+\hline
+ ID & REQ ID & REQ TYPE & REQ DESC & REQ SRC  & FLAG \\
+ \hline
+  US1 & 1 & FN & As an user, I want click able 0 to
+9 numbers in calculator & System description from Deliverable 1 (D1) and ref \cite{js_story} & Passed \\
+ \hline
+ US2 & 2 & FN & As an user, I want add two numbers so that I can see what is the
+total number & Class diagram from D1. as operator & Passed \\
+ \hline
+ US3 & 3 & FN & As an user, I want subtract two
+numbers so that I can see what
+is the result & Class diagram from D1. as operator  & Passed \\
+ \hline
+ US4 & 4 & FN & As an user, I want multiply two
+numbers so that I can see what
+is the result & Class diagram from D1. as operator  & Passed \\
+ \hline
+ US5 & 5 & FN & As  an  user,  I  want  divide  two
+numbers so that I can see what
+is the division result & Class diagram from D1. as operator  & Passed \\
+ \hline
+ US6 & 6 & FN & As an user, I want toggle the sign
+of the number so that i can get
+opposite value & System description from Deliverable 1 (D1) and ref \cite{cal_story}  & Passed \\
+ 
+ \hline
+\end{tabular}
+
+
+\begin{tabular}{ |p{1cm}|p{1cm}|p{1cm}|p{3cm}|p{3cm}|p{2cm}| }
+\hline
+ US7 & 7 & FN & As  an  user,  I  want  every  calculation result after clicking in the
+equal button & REQ ID 2,3,4,5  & Passed \\
+ \hline
+ US8 & 8 & FN & As an user, I want the button of
+silver ratio as number.  So that i
+can use it as a number for arithmetic operation. & Use case diagram from D1  & Passed \\
+ \hline
+ US9 & 9 & FN & As an  user,  I want  to know the
+number for which silver ratio will
+be a given number. & Use case diagram from D1  & Passed \\
+ \hline
+ US10 & 10 & FN & As an user, I want to use decimal
+number so I want a decimal separator for decimal number input & System description from Deliverable 1 (D1) and ref \cite{js_story}  & Passed \\
+\hline
+\end{tabular}
 \printbibliography
 \end{document}                 % The input file ends with this command.
