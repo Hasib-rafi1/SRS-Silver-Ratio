@@ -157,7 +157,7 @@ The concept of the type of user stories are taken from online search\cite{js_sto
  \hline
   \textbf{Description}   & As an user, I want add two numbers so that I can see what is the total number &    \textbf{Acceptance}& 
 \begin{itemize}
-\item Given two numbers need to be added and have to return the total result. Example: 2 add 3 will produce the result 5. 6 add 4 will produce the result 10. 
+\item Given two numbers need to be added and have to return the total result. Example: 14 add 7 will produce the result 21. 6 add 4 will produce the result 10. 
 \end{itemize}
   \\
  \hline
@@ -173,7 +173,7 @@ The concept of the type of user stories are taken from online search\cite{js_sto
  \hline
   \textbf{Description}   & As an user, I want subtract two numbers so that I can see what is the result &    \textbf{Acceptance}& 
 \begin{itemize}
-\item Given two numbers need to be subtracted and have to return the rest. Example: 2 subtracted from 3 will produce the result 1. 6 subtracted from 10 will produce the result 4. 
+\item Given two numbers need to be subtracted and have to return the rest. Example: 7 subtracted from 14 will produce the result 7. 6 subtracted from 10 will produce the result 4. 
 \end{itemize}
   \\
  \hline
@@ -189,7 +189,7 @@ The concept of the type of user stories are taken from online search\cite{js_sto
  \hline
   \textbf{Description}   & As an user, I want multiply two numbers so that I can see what is the result &    \textbf{Acceptance}& 
 \begin{itemize}
-\item Given two numbers need to be multiplied and have to return the result. Example: 2 multiplied with 3 will produce the result 6. 6 multiplied with 10 will produce the result 60. 
+\item Given two numbers need to be multiplied and have to return the result. Example: 14 multiplied with 7 will produce the result 98. 6 multiplied with 10 will produce the result 60. 
 \end{itemize}
   \\
  \hline
@@ -205,7 +205,7 @@ The concept of the type of user stories are taken from online search\cite{js_sto
  \hline
   \textbf{Description}   & As an user, I want divide two numbers so that I can see what is the division result &    \textbf{Acceptance}& 
 \begin{itemize}
-\item Given two numbers need to be divided and have to return the result. Example: 4 divided by 2 will produce the result 2. 16 divided by 2 will produce the result 8. 
+\item Given two numbers need to be divided and have to return the result. Example: 14 divided by 7 will produce the result 2. 16 divided by 2 will produce the result 8. 
 \end{itemize}
   \\
  \hline
@@ -215,7 +215,7 @@ The concept of the type of user stories are taken from online search\cite{js_sto
 
 \begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
  \hline
- \multicolumn{4}{|c|}{US 6 - Division of two numbers} \\
+ \multicolumn{4}{|c|}{US 6 - Toggle a number} \\
  \hline
  \textbf {Story ID}& US6 &  \textbf{Priority} & Low \\
  \hline
@@ -263,7 +263,7 @@ The concept of the type of user stories are taken from online search\cite{js_sto
 
 \begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
  \hline
- \multicolumn{4}{|c|}{US 9 - Silver ratio as a operand} \\
+ \multicolumn{4}{|c|}{US 9 - Silver ratio as a operator} \\
  \hline
  \textbf {Story ID}& US9 &  \textbf{Priority} & High \\
  \hline
@@ -283,7 +283,7 @@ The concept of the type of user stories are taken from online search\cite{js_sto
  \hline
  \textbf {Story ID}& US10 &  \textbf{Priority} & High \\
  \hline
-  \textbf{Description}   & As an user, I want to use decimal number so I want a decimal separator for decimal number input.. &    \textbf{Acceptance}& 
+  \textbf{Description}   & As an user, I want to use decimal number so I want a decimal separator for decimal number input. &    \textbf{Acceptance}& 
 \begin{itemize}
 \item  Need to take decimal input.
 \end{itemize}
@@ -292,6 +292,39 @@ The concept of the type of user stories are taken from online search\cite{js_sto
  \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&  Decimal separator can be used once in a number.  \\
  \hline
 \end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 11 -  Square} \\
+ \hline
+ \textbf {Story ID}& US11 &  \textbf{Priority} & Medium \\
+ \hline
+  \textbf{Description}   & As an user, I want to use the square value of a given number. &    \textbf{Acceptance}& 
+\begin{itemize}
+\item  The value will be the multiplication of it's own. 2 square is 4
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&  For Square of non positive number, the sign of the number will be changed. For -2 it will be 4.  \\
+ \hline
+\end{tabular}
+
+\begin{tabular}{ |p{2cm}|p{5cm}|p{2cm}|p{4cm}| }
+ \hline
+ \multicolumn{4}{|c|}{US 12 -  Square Root} \\
+ \hline
+ \textbf {Story ID}& US12 &  \textbf{Priority} & Medium \\
+ \hline
+  \textbf{Description}   & As an user, I want to use the square root value of a given number. &    \textbf{Acceptance}& 
+\begin{itemize}
+\item  The value will be the a number which square is the given number. 4 square root is 2.  
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 0.1 d &  \textbf{Constrains}&    \\
+ \hline
+\end{tabular}
+
 \section{Traceability Matrix}
 
 The traceability matrix is realized to ensure that all the requirements defined for the system are tested and passed \cite{prev_project}.\newline
@@ -321,13 +354,7 @@ is the division result & Class diagram from D1. as operator  & Passed \\
  US6 & 6 & FN & As an user, I want toggle the sign
 of the number so that i can get
 opposite value & System description from Deliverable 1 (D1) and ref \cite{cal_story}  & Passed \\
- 
  \hline
-\end{tabular}
-
-
-\begin{tabular}{ |p{1cm}|p{1cm}|p{1cm}|p{3cm}|p{3cm}|p{2cm}| }
-\hline
  US7 & 7 & FN & As  an  user,  I  want  every  calculation result after clicking in the
 equal button & REQ ID 2,3,4,5  & Passed \\
  \hline
@@ -339,9 +366,38 @@ can use it as a number for arithmetic operation. & Use case diagram from D1  & P
 number for which silver ratio will
 be a given number. & Use case diagram from D1  & Passed \\
  \hline
+\end{tabular}
+
+
+\begin{tabular}{ |p{1cm}|p{1cm}|p{1cm}|p{3cm}|p{3cm}|p{2cm}| }
+ \hline
  US10 & 10 & FN & As an user, I want to use decimal
 number so I want a decimal separator for decimal number input & System description from Deliverable 1 (D1) and ref \cite{js_story}  & Passed \\
 \hline
+ US11 & 11 & FN & As  an  user,  I  want  to  use  the
+square value of a given number. The value will be the
+multiplication of it’s own.  2 square is 4 & Use case from D1  & Passed \\
+ \hline
+ US12 & 12 & FN & As  an  user,  I  want  to  use  the
+square root value of a given number. & Use case from D1 & Passed \\
+\hline
 \end{tabular}
+
+\section{Implementation}
+Based on a set of user stories a calculator is build by java programming language. The calculator is having basic calculator operation as well as  it has some special operation based on the user stories and use cases. Some operation based on silver ratio is in the calculation. All the user stories are implemented in this project. The logical concept is taken from another project \cite{cal_project}.
+\begin{figure}[!htb]
+ \centering
+  \includegraphics[width=1\textwidth]{project}
+  \caption{Screen Shot of the implemented calculator.}
+\end{figure}
+
+The project itself contains the java files along with jar file of this application. The JUnit test case file is also added with the java file named "CalculatorTest.java". The project link is also given in the online version section in this report along with the link of digital copy of this report. 
+\section{Online Version}
+\textbf{Report:} \url{https://github.com/Hasib-rafi1/SRS-Silver-Ratio}
+\newline
+\textbf{Project:} \url{https://github.com/Hasib-rafi1/srs-project-calculator}\newline
+
+\section{Conclusion}
+In this document, the user stories for the calculator system have been written to capture basic requirement of a calculator system along with silver ratio. This user stories are implemented by java program where all the acceptance test are passed. This document contains both the D1 and D2. 
 \printbibliography
 \end{document}                 % The input file ends with this command.
